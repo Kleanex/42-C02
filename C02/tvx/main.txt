@@ -1,0 +1,153 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    main.txt                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dosteine <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/07/20 05:59:47 by dosteine          #+#    #+#              #
+#    Updated: 2022/07/20 07:56:21 by dosteine         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+ex00
+
+#include <stdio.h>
+int main(void)
+{
+	char	dest[255];
+	char	*src;
+
+	src = "ofghkggmrjmovog40868443%&^&($#@njour";
+	ft_strcpy(dest, src);
+	printf("%s", dest);
+}
+
+	
+ex01
+
+#include <stdio.h>                                          
+                                                             
+  int main(void)                                              
+ {                                                           
+      char    dest[255];                                      
+      char    *src;                                           
+                                                              
+      src = "A Angouleme le 18/07  la temperature exterieure etait de 40 degres.";                     
+     ft_strncpy(dest,src, 25);                               
+      printf("%s", dest);                                     
+ }              
+
+ex02
+
+#include <stdio.h>
+                 
+int main(void) 
+{              
+char    *str;
+                
+str = "bonjo3ur";                                                                                 
+printf("%d", ft_str_is_alpha(str));                                                              
+ }              
+
+ex03
+
+#include <stdio.h>
+                
+int main(void) 
+{              
+	char    *str;
+               
+	str = "2546&";                                                                                   
+	printf("%d", ft_str_is_numeric(str));
+}              
+
+ex04
+
+#include <stdio.h>
+int main()
+{
+	char	*str;
+
+	str = "bonjour";
+	printf("%d", ft_str_is_lowercase (str));
+}
+
+ex05
+
+#include <stdio.h>
+
+int	main(void)
+{
+	char	*str;
+
+	str = "BonJOUR";
+	ft_str_is_uppercase (str);
+}
+
+ex06
+
+#include <stdio.h>
+
+int main(void)
+{
+	char	*str;
+
+	str = "\0";
+	printf("%d",ft_str_is_printable (str));
+}
+
+ex07 
+
+#include <stdio.h>
+
+int main ()
+{
+	char str[] = "domiNIq65)2$!ERue";
+	printf("%s", ft_strupcase(str));
+	return (0);
+}
+
+ex 08
+
+#include <stdio.h>
+              
+int main ()   
+{             
+char str[] = "domiNIq65)2$!ERue";
+printf("%s", ft_strlowcase(str));                                              
+return (0);
+}             
+
+ex09
+
+#include <stdio.h>
+
+int main(void)
+{
+//	char str[] = "salut, comment tu va ? 42mots quarante-deux; cinquante+et+un\n";
+	char str2[] = "-Zm iir-4t~@h'*7e;&{*-T  qfzoq/|3o/lb;Djrp$";
+ // MOULINETTE    "+Zm lir-4t~@H'*7e;&{*-T  Qfzoq/|3o/lb;Djrp$";	
+	
+//	printf("%s", ft_strcapitalize (str));
+
+	printf("%s", ft_strcapitalize (str2));
+	return (0);
+}
+
+ex10
+
+/*#include <stdio.h>
+int	main(int argc, char *argv[])
+{
+	char dest[16];
+	printf("%u\n", ft_strlcpy(dest, "", sizeof(dest)));
+	printf("%u\n", ft_strlcpy(dest, "hello world, how are thou?", 0));
+	printf("%u\n", ft_strlcpy(dest, "hello world, how are thou?", sizeof(dest)));
+	puts(dest);
+	return (0);
+}*/
+        
+
+
+
